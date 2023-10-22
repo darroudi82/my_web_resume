@@ -6,26 +6,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body dir="rtl">
-    <div>
-        <header>
-            <nav>
-                <li><a href="#">منوی اصلی</a></li>
-                <li><a href="#">فهرست</a></li>
-                <li><a href="#">عکس-فیلم--صوت</a></li>
-                <li><a href="#">راهنما</a></li>
-            </nav>
-        </header>
-        <h2>مهدی درودی </h2>
-        <p> دانشجوی رشته آموزش علوم تجربی دانشگاه شهید بهشتی</p>
+
+    <header>
+        <h2 class="name">مهدی درودی </h2>
+        <p class="job"> دانشجوی رشته آموزش علوم تجربی دانشگاه شهید بهشتی</p>
         <img src="my image.jpg" alt="my image can not be displayed " width="300px" height="230px">
-    </div>
+        <nav>
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">تجربیات</a></li>
+            <li><a href="#">مهارتها</a></li>
+        </nav>
+    </header>
+        
+
     <article>
         <section>
             <h3>بیوگرافی</h3>
-            <p>متولد 10 اسفند سال 1382 در شهر درورد_نیشابور علاقه مند به طبیعت و محیط زیست </p>
+            <p id="summary">متولد 10 اسفند سال 1382 در شهر درورد_نیشابور علاقه مند به طبیعت و محیط زیست </p>
         </section>
         <section>
             <h3>تجربیات</h3>
@@ -60,36 +61,32 @@
         </section>
         <section style=" border: double; width: 70%;">
             <h3 style="border: none ">ارسال پیام برای من :</h3>
-            <div style="background-color: rgb(229, 246, 117);">
-                <label for="user">لطفا نام خود را وارد کنید:</label>
-                <input type="text" name="user"><br>
-            </div>
-            <div style="background-color: rgb(161, 254, 167);">
-                <label for="password">گذرواژه خود را وارد کنید :</label>
-                <input type="password" name="password"><br>
-            </div>
-            <div style="background-color: #ddbea9;">
-                <label for="email">ایمیل خود را بنویسید :</label>
-                <input type="email" name="emal"><br>
-            </div>
-            <div style="background-color: rgb(140, 196, 196);">
-                <label for="interests">چه فعالیت هایی دارید ؟</label><br>
-                <input type="checkbox" name="interests" value="a">|شاغل هستم
-                <input type="checkbox" name="interests" value="b"> درس میخوانم
-                <input type="checkbox" name="interests" value="c">کار هنری میکنم <br>
-            </div>
-            <div style="background-color: rgba(37, 42, 44, 0.48);">
-                <label for="gender">آیا از سایت من راضی بودید؟</label><br>
-                <input type="radio" name="gender" value="yes">بله
-                <input type="radio" name="gender" value="no">خیر<br>
-            </div>
-            <div style="background-color: rgb(244, 186, 92);">
-                <label for="message">انتقادات یا پیام خود را برای من ارسال کنید :</label><br>
-                <textarea name="message" cols="30" rows="10"></textarea><br>
-            </div>
-            <div style="background-color: rgb(244, 186, 92);">
-                <input style="background-color: aqua;" type="submit" name="submit" value="ارسال کنید">
-            </div>
+            <form action="">
+                    <label for="user">لطفا نام خود را وارد کنید:
+                        <input type="text" name="user"><br>
+                    </label>
+                    <label for="password">گذرواژه خود را وارد کنید :
+                        <input type="password" name="password"><br>
+                    </label>
+                    <label for="email">ایمیل خود را بنویسید :
+                        <input type="email" name="emal"><br>
+                    </label>
+                    <label for="interests">چه فعالیت هایی دارید ؟<br>
+                        <input type="checkbox" name="interests" value="a">|شاغل هستم
+                        <input type="checkbox" name="interests" value="b"> درس میخوانم
+                     <input type="checkbox" name="interests" value="c">کار هنری میکنم <br>
+                    </label>
+                    <label for="gender">آیا از سایت من راضی بودید؟<br>
+                        <input type="radio" name="gender" value="yes">بله
+                        <input type="radio" name="gender" value="no">خیر<br>
+                    </label>
+                    <label for="message">انتقادات یا پیام خود را برای من ارسال کنید :<br>
+                        <textarea name="message" cols="30" rows="10"></textarea><br>
+                    </label>
+                    <label for="submit">
+                        <input type="submit" name="submit" value="ارسال کنید">
+                    </label>
+                </form>
         </section>
     </article>
     <footer>
