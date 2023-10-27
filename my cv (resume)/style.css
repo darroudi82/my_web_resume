@@ -1,58 +1,127 @@
 /* total */
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     box-sizing: border-box;
     direction: rtl;
-}
-
-/* header */
-
-.name{
+  }
+  
+  /* header */
+  
+  .name {
     font-size: 28px;
-
-}
-
-.job{
+  }
+  
+  .job {
     font-size: 18px;
-}
-
-ul{
+  }
+  
+  nav {
     margin: 0px;
-}
-
-header, 
-footer{
+    list-style-type: none;
+  }
+  
+  header,
+  footer {
     text-align: center;
     background-color: bisque;
-}
-header{
+  }
+  header {
     padding-top: 2px;
     padding-bottom: 2px;
-}
-
-header img {
+  }
+  
+  header img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-}
-
-/* main section */
-h3{
+  }
+  
+  b {
+    color: skyblue;
+  }
+  
+  nav li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: black;
+    background-color: rgb(243, 138, 78);
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(237, 100, 100);
+    background-color: #e6c881;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #e68181;
+    text-decoration: 2px solid #e68181;
+  }
+  
+  /* main section */
+  h3 {
     color: #851919;
     font-size: 20px;
     border-bottom: 1px solid brown;
     padding-bottom: 2px;
-}
-
-section,
-footer{
+  }
+  
+  section,
+  footer {
     padding: 2px 10px;
-}
-
-#summary{
+  }
+  
+  #summary {
     font-size: 16px;
     word-spacing: 4px;
     line-height: 20px;
-}
-
-/* footer */
+  }
+  
+  th {
+    background-color: rgb(36, 35, 35);
+    font-size: large;
+    color: white;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  table {
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    border: 1px solid black;
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="textarea"] {
+    width: 203px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #2e034a;
+  }
+  
+  input[type="submit"] {
+    border: 2px solid rgb(171, 77, 208);
+    background-color: #46096f;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #fdfdfd;
+    margin-bottom: 7px;
+  }
+  /* footer */
+  
