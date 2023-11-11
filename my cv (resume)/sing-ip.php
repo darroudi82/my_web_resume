@@ -60,7 +60,7 @@ if (isset($_POST['submit'])){
         $error['total'] = "There are some errors in your sign-up form";
     }
     else {
-        header("Location: login.php");
+        header("Location: log-in.php");
     }
 }
 
